@@ -1,0 +1,3 @@
+setuptools>=setuptools>=18.0
+wheel
+cython
