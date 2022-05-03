@@ -54,9 +54,6 @@ cdef int* create_int_array(int length, int initial_value):
     if not arr:
         raise MemoryError()
 
-    if length > 1000:
-        raise ValueError()
-
     for ix in range(length):
         arr[ix] = initial_value
 
@@ -272,8 +269,6 @@ cpdef enum Algorithms:
 
 class Maze:
     def __init__(self, rows: int, columns: int):
-        if rows * columns > 1000:
-            raise RuntimeError("rows x columns > 1000 not supported")
         self.rows = rows
         self.columns = columns
 
