@@ -9,7 +9,7 @@ from maze.generation.algorithm import Maze as _Maze
 from maze.generation.algorithm import Algorithms as _Algorithms
 
 
-MAX_ROW_COLUMN_PRODUCT = 1000
+MAX_ROW_COLUMN_PRODUCT = 10000
 
 Algorithm = Literal[
     "binary_search",
